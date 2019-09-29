@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.muhammad.alarm.MainActivity"
+    android:background="#3498DB">
+    <TextView
+        android:id="@+id/small_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+
+        />
+    <TextView
+        android:id="@+id/big_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"
+        android:textColor="#3498DB"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/size_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#3498DB"
+        android:text="make it larg "
+        android:onClick="onClickBtn"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
